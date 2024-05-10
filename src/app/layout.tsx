@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { ChakraProvider } from "@chakra-ui/react";
+import {Providers} from "./providers"
 import { Inter } from "next/font/google";
 import "./globals.css";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,15 +12,17 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <ChakraProvider>
+      <Providers>
         <body className={inter.className}>{children}</body>
-      </ChakraProvider>
+        
+  
+      </Providers>
     </html>
   );
 }
