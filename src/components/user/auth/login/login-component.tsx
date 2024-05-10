@@ -15,7 +15,7 @@ import noisypng from "../../../../../public/Imagotipo_Noisy.png";
 
 import {validations} from "../validations";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
-import { errorsForm, formData } from "./login_interface";
+import { errorsForm, formData } from "../../../../types/login_interface";
 const LoginComponent = () => {
   const [formData, setFormData] = useState<formData>({
     email: "",

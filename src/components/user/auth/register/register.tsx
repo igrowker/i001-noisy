@@ -12,7 +12,7 @@ import {
 import React, { useState } from "react";
 import Imagotipo_Noisy from "../../../../../public/Imagotipo_Noisy.png"
 import Image from "next/image";
-import {errorsForm, formData} from "./register_interface"
+import {errorsForm, formData} from "../../../../types/register_interface"
 
 import {registerValidations} from "../validations";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
