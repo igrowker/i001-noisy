@@ -1,0 +1,23 @@
+[
+    {
+      "icon": "/images-svg/home.svg",
+      "title": "Coella",
+      "type": "Casa de 4 habitaciones",
+      "place": "Mexico DF",
+      "cost": 64
+    },
+    {
+      "icon": "/images-svg/departamento.svg",
+      "title": "Tomorrowland",
+      "type": "Departamento 2 Habitaciones",
+      "place": "Brujas, Bélgica",
+      "cost": 60
+    },
+    {
+      "icon": "/images-svg/habitacion.svg",
+      "title": "Cosquin Rock",
+      "type": "Habitación doble",
+      "place": "Córdoba, Argentina",
+      "cost": 25
+    }
+  ]

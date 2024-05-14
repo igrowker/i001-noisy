@@ -24,7 +24,6 @@ const MakeFriends = () => {
   const largeCardHeight = useBreakpointValue({ base: "157px", md: "157px" });
   const smallCardHeight = useBreakpointValue({ base: "82px", md: "82px" });
 
-  // Datos simulados de la base de datos
   const linkData = [
     { text: "Cosquin Rock", src: "/images-tribus/fest2.webp" },
     { text: "Lollapaloza", src: "/images-tribus/fest5.webp" },
@@ -32,7 +31,6 @@ const MakeFriends = () => {
     { text: "Coachella", src: "/images-tribus/fest3.webp" },
   ];
 
-  // Intercambiar los dos últimos elementos del array
   const updatedLinkData = [...linkData];
   const lastIndex = updatedLinkData.length - 1;
   [updatedLinkData[lastIndex - 1], updatedLinkData[lastIndex]] = [
@@ -50,14 +48,16 @@ const MakeFriends = () => {
       position="absolute"
       boxShadow="0px 0px 10px 0px rgba(246, 224, 94, 1),0px 10px 10px -5px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.1)"
     >
-      <Box className="boxText"
+      <Box
+        className="boxText"
         position="relative"
         width="196px"
         height="143px"
         top="60px"
         left={{ base: "4%", sm: "30%", md: "30%" }}
       >
-        <Text className="promoText"
+        <Text
+          className="promoText"
           fontFamily="Lato"
           fontSize="18px"
           fontWeight="700"
@@ -66,12 +66,14 @@ const MakeFriends = () => {
           overflow="hidden"
           color="#1A202C"
           mt="10px"
+          _hover={{ transform: "scale(1.2)" }}
         >
           Encuentra tu tribu,haz amigos y vive una experiencia compartida!
         </Text>
       </Box>
 
-      <Button className="buttonTogether"
+      <Button
+        className="buttonTogether"
         size={buttonSize}
         color={buttonColor}
         width="112px"
@@ -85,12 +87,12 @@ const MakeFriends = () => {
       >
         Ir a Juntadas
       </Button>
-      <Box className="boxCard"
+      <Box
+        className="boxCard"
         position="absolute"
         right={{ base: "4", sm: "25%", md: "25%" }}
         top={{ base: "20px", sm: "35px", md: "35px" }}
       >
-        {/* Primer Stack con dos elementos */}
         <Stack spacing={3} direction="row">
           {updatedLinkData.slice(0, 2).map((item, index) => (
             <Box
@@ -101,6 +103,7 @@ const MakeFriends = () => {
               borderRadius={borderRadius}
               overflow="hidden"
               boxShadow="rgba(0, 0, 0, 0.25) 0px 4px 4px 0px"
+              _hover={{ transform: "scale(1.2)" }}
             >
               <Box position="relative" height="100%">
                 <Box
@@ -135,7 +138,6 @@ const MakeFriends = () => {
           ))}
         </Stack>
 
-        {/* Segundo Stack con dos elementos */}
         <Stack spacing={3} direction="row" pt="10px">
           {updatedLinkData.slice(2, 4).map((item, index) => (
             <Box
@@ -150,6 +152,7 @@ const MakeFriends = () => {
               top={index === 1 ? "-74px" : "unset"}
               left={index === 1 ? "1%" : "unset"}
               transform={index === 1 ? "translateX(-1%)" : "unset"}
+              _hover={{ transform: "scale(1.2)" }}
             >
               <Box position="relative" height="100%">
                 <Box
