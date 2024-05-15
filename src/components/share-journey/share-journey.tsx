@@ -3,6 +3,7 @@
 import { theme, Flex, Box } from "@chakra-ui/react";
 import { useState } from "react";
 import Share from "../share/share";
+import MyTrips from "../myTrips/myTrips";
 
 export default function ShareJourney() {
     // Este estado almacena que es lo que se debe renderizar según el usuario escoja
@@ -34,7 +35,7 @@ export default function ShareJourney() {
 
             {/* Form */}
             {type === "share" ? <Share /> : <></>}
-            {type === "myJourneys" ? <div>Mis viajes</div> : <></>}
+            {type === "myJourneys" ? <div><MyTrips /></div> : <></>}
             {type === "edit" ? <div>Editar</div> : <></>}
         </Flex>
     );
