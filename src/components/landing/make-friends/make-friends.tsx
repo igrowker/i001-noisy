@@ -10,6 +10,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 import React from "react";
+import NextLink from "next/link";
 
 const MakeFriends = () => {
   const width = useBreakpointValue({ base: "100%", md: "429px" });
@@ -85,7 +86,10 @@ const MakeFriends = () => {
         transform="translateX(-50%)"
         top="190px"
       >
-        Ir a Juntadas
+        <Link as={NextLink} href="/home">
+          {" "}
+          Ir a Juntadas
+        </Link>
       </Button>
       <Box
         className="boxCard"

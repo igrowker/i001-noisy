@@ -1,6 +1,7 @@
 import { Box, Image, Text } from "@chakra-ui/react";
+import alojamientos from './alojamientos.json'; 
 import React from "react";
-import alojamientos from './alojamientos.json';
+
 
 const Alojamiento = () => {
   return (

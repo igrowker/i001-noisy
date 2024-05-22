@@ -3,6 +3,7 @@ import MakeFriends from "./make-friends/make-friends";
 import Footer from "./footer/footer";
 import { Flex } from "@chakra-ui/react";
 import Alojamiento from "./alojamiento/alojamiento";
+import Entradas from "./entradas/entradas";
 
 
 
@@ -18,7 +19,7 @@ const Landing = () => {
     >
         
        
-    
+      <Entradas></Entradas>
       <MakeFriends></MakeFriends>
       <Alojamiento></Alojamiento>
       <Footer></Footer>
